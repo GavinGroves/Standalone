@@ -13,26 +13,16 @@ public class InventoryPanelView : MonoBehaviour
     private GameObject prefab_Item;
     private GameObject prefab_Slot;
 
-    #region 公共方法使Controller层调用
-    public Transform GetTransform()
-    {
-        return m_Transform;
-    }
+    #region 公开Get属性
 
-    public Transform GetGridTransform()
-    {
-        return grid_Transform;
-    }
+    public Transform Transform => m_Transform;
 
-    public GameObject GetPrefabItem()
-    {
-        return prefab_Item;
-    }
+    public Transform GridTransform => grid_Transform;
 
-    public GameObject GetPrefabSlot()
-    {
-        return prefab_Slot;
-    }
+    public GameObject PrefabItem => prefab_Item;
+
+    public GameObject PrefabSlot => prefab_Slot;
+
     #endregion
     
     private void Awake()
