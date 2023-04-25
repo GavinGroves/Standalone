@@ -28,10 +28,11 @@ public class CraftingTabItemController : MonoBehaviour
     /// <summary>
     /// 初始化选项卡
     /// </summary>
-    public void InitTabs(int index)
+    public void InitTabs(int index,Sprite icon)
     {
         this.index = index;
         gameObject.name = "Tab" + index;
+        m_Icon.sprite = icon;
     }
 
     /// <summary>
